@@ -7,7 +7,7 @@ export default {
   */
   mode: 'spa',
   router: {
-    base: '/webdev-starter-materialUI/'
+    base: '/Sarovar_event_hall_redesign/'
   },
   /*
   ** Nuxt target
