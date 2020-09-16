@@ -1,6 +1,7 @@
 <template>
   <v-row justify="center">
     <v-dialog v-model="dialog" persistent max-width="600px">
+      <!-- "persistent" modal-like feature -->
       <template v-slot:activator="{ on, attrs }">
         <v-btn
           color="primary"
@@ -34,6 +35,7 @@
               </v-col>
               <v-col cols="12">
                 <v-text-field label="Email*" required></v-text-field>
+               <!-- v-col changes the size of the text fields -->
               </v-col>
               <v-col cols="12">
                 <v-text-field label="Password*" type="password" required></v-text-field>
@@ -51,6 +53,7 @@
                   label="Interests"
                   multiple
                 ></v-autocomplete>
+                <!-- auto-fills words/choices -->
               </v-col>
             </v-row>
           </v-container>
@@ -70,6 +73,7 @@
   export default {
     data: () => ({
       dialog: false,
+      // if "false -> true" dialog box will not wait for the user to click on "open me"
     }),
   }
 </script>

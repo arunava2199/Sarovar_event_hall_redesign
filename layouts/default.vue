@@ -3,12 +3,13 @@
   <v-app id="inspire">
 
     <!--Header -->
-    <v-app-bar color="indigo" dark fixed app>
-      <v-toolbar-title>Application</v-toolbar-title>
-       <!-- Component Example -->
-      <VuetifyLogo/>
-
-    </v-app-bar>
+    <!-- <v-row justify="center" did not work -->
+      <v-app-bar color="indigo" dark fixed app>
+        <v-toolbar-title>Sarovar</v-toolbar-title>
+        <!-- Component Example -->
+          <Sarovarlogo/>
+      </v-app-bar>
+    <!-- </v-row> -->
 
     <!-- Body -->
     <v-content light>
@@ -34,7 +35,7 @@ export default {}
   }
 
    #inspire {
-    background-color:grey;
+    background-color:whitesmoke;
     color: black;
   }
 </style>
