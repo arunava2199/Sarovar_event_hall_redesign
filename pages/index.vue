@@ -3,7 +3,7 @@
     <v-content>
       It Worked! <br>
       just wanted to type something
-      <Tab/>
+      <button/>
     </v-content>
   </div>
 </template>

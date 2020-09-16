@@ -13,6 +13,7 @@
     <!-- Body -->
     <v-content light>
       <nuxt />
+      <button/>
     </v-content>
 
     <!-- Footer -->
@@ -33,7 +34,7 @@ export default {}
   }
 
    #inspire {
-    background-color: white;
+    background-color:grey;
     color: black;
   }
 </style>
