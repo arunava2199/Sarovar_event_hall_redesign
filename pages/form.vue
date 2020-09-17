@@ -1,7 +1,7 @@
 <template>
   <v-row justify="center">
     <v-dialog v-model="dialog" persistent max-width="600px">
-      <!-- "persistent" modal-like feature -->
+      <!-- "persistent" is modal-like feature -->
       <template v-slot:activator="{ on, attrs }">
         <v-btn
           color="primary"
