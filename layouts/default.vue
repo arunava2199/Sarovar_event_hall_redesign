@@ -4,10 +4,10 @@
 
     <!--Header -->
     <!-- <v-row justify="center" did not work -->
-      <v-app-bar color="indigo" dark fixed app>
+      <v-app-bar color="white" dark fixed app>
         <v-toolbar-title>Sarovar</v-toolbar-title>
         <!-- Component Example -->
-          <Sarovarlogo/>
+          <Header/>
       </v-app-bar>
     <!-- </v-row> -->
 

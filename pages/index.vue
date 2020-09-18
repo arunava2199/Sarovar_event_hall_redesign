@@ -1,8 +1,7 @@
 <template>
   <div>
     <v-content>
-      It Worked! <br>
-      just wanted to type something
+
       <button/>
     </v-content>
   </div>
