@@ -20,7 +20,7 @@
       <button/>
 
     </v-content>
-      <HallBooking/>
+      
 
     <!-- Footer -->
     <v-footer color="indigo" app>
