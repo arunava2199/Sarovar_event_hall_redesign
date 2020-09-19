@@ -16,7 +16,7 @@
           tile
 
         >
-          yolo
+          Estimated number of people
         </v-card>
 
       </v-col>
@@ -38,7 +38,7 @@
           tile
 
         >
-          yolo
+
         </v-card>
 
       </v-col>

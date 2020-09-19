@@ -10,7 +10,7 @@
 .HallBooking {
   height: 80px;
   width: 1000px;
-  margin: auto;
+  margin: 0 auto;
 
 }
 </style>

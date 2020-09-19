@@ -9,19 +9,23 @@
         <!-- Component Example -->
           <Header/>
 
+
       </v-app-bar>
     <!-- </v-row> -->
+
 
     <!-- Body -->
     <v-content light>
       <nuxt />
       <button/>
-      <HallBooking/>
+
     </v-content>
+      <HallBooking/>
 
     <!-- Footer -->
     <v-footer color="indigo" app>
       <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
+      <Footer/>
     </v-footer>
 
   </v-app>
