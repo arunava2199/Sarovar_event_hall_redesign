@@ -1,4 +1,4 @@
-<template>
+</template>
   <v-card
     class="mx-auto"
     max-width="500"
@@ -55,7 +55,7 @@
   </v-card>
 </template>
 
-<script>
+</script>
   export default {
     data: () => ({
       show: false,

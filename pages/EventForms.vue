@@ -1,116 +1,89 @@
 <template>
-  <form>
-    <v-text-field
-      v-model="name"
-      :error-messages="nameErrors"
-      :counter="10"
-      label="Name"
-      required
-      @input="$v.name.$touch()"
-      @blur="$v.name.$touch()"
-    ></v-text-field>
-    <v-text-field
-      v-model="email"
-      :error-messages="emailErrors"
-      label="E-mail"
-      required
-      @input="$v.email.$touch()"
-      @blur="$v.email.$touch()"
-    ></v-text-field>
-    <v-select
-      v-model="select"
-      :items="items"
-      :error-messages="selectErrors"
-      label="Item"
-      required
-      @change="$v.select.$touch()"
-      @blur="$v.select.$touch()"
-    ></v-select>
-    <v-checkbox
-      v-model="checkbox"
-      :error-messages="checkboxErrors"
-      label="Do you agree?"
-      required
-      @change="$v.checkbox.$touch()"
-      @blur="$v.checkbox.$touch()"
-    ></v-checkbox>
+  <v-stepper v-model="e6" vertical>
+    <v-stepper-step :complete="e6 > 1" step="1">
+      Type of Event
+      <small>Summarize if needed</small>
+    </v-stepper-step>
 
-    <v-btn class="mr-4" @click="submit">submit</v-btn>
-    <v-btn @click="clear">clear</v-btn>
-  </form>
+    <v-stepper-content step="1">
+      <v-card color="whitesmoke" class="mb-12" height="200px">
+
+        <!-- Contents of "Types of Event"  -->
+
+       <Spacingb/>
+       <Spacingw/>
+
+      </v-card>
+      <v-btn color="primary" @click="e6 = 2">Confirm & Continue</v-btn>
+      <!-- <v-btn text>Cancel</v-btn> -->
+    </v-stepper-content>
+
+    <!-- adds stuff below v-card -->
+
+    <v-stepper-step :complete="e6 > 2" step="2">Specifications</v-stepper-step>
+
+    <v-stepper-content step="2">
+      <v-card color="whitesmoke" class="mb-12" height="300px">
+
+        <!-- Contents of "Specifications"  -->
+
+        <Menu/>
+
+      </v-card>
+      <v-btn color="primary" @click="e6 = 3">Confirm & Continue</v-btn>
+      <!-- <v-btn text>Cancel</v-btn> -->
+    </v-stepper-content>
+
+    <v-stepper-step :complete="e6 > 3" step="3">Hall Suggestions</v-stepper-step>
+
+    <v-stepper-content step="3">
+      <v-card color="whitesmoke" class="mb-12" height="200px">
+
+        <!-- Contents of "Hall Suggestions"  -->
+
+
+
+      </v-card>
+      <v-btn color="primary" @click="e6 = 4">Confirm & Continue</v-btn>
+      <!-- <v-btn text>Cancel</v-btn> -->
+    </v-stepper-content>
+
+    <v-stepper-step step="4">Optional Extras</v-stepper-step>
+    <v-stepper-content step="4">
+      <v-card color="whitesmoke" class="mb-12" height="200px">
+
+        <!-- Contents of "Optional Extras"  -->
+      </v-card>
+      <v-btn color="primary" @click="e6 = 5">Confirm & Continue</v-btn>
+      <!-- <v-btn text>Cancel</v-btn> -->
+    </v-stepper-content>
+
+    <v-stepper-step step="5">Confirmation</v-stepper-step>
+    <v-stepper-content step="5">
+      <v-card color="whitesmoke" class="mb-12" height="200px">
+
+        <!-- Contents of "Confirmation"  -->
+
+
+
+      </v-card>
+      <v-btn color="primary" @click="e6 = 1">Confirm & Continue</v-btn>
+      <!-- <v-btn text>Cancel</v-btn> -->
+    </v-stepper-content>
+
+  </v-stepper>
 </template>
 
+// add scripts in sequence
+
 <script>
-  import { validationMixin } from 'vuelidate'
-  import { required, maxLength, email } from 'vuelidate/lib/validators'
-
+    // script for stepper form
   export default {
-    mixins: [validationMixin],
-
-    validations: {
-      name: { required, maxLength: maxLength(10) },
-      email: { required, email },
-      select: { required },
-      checkbox: {
-        checked (val) {
-          return val
-        },
-      },
-    },
-
-    data: () => ({
-      name: '',
-      email: '',
-      select: null,
-      items: [
-        'Item 1',
-        'Item 2',
-        'Item 3',
-        'Item 4',
-      ],
-      checkbox: false,
-    }),
-
-    computed: {
-      checkboxErrors () {
-        const errors = []
-        if (!this.$v.checkbox.$dirty) return errors
-        !this.$v.checkbox.checked && errors.push('You must agree to continue!')
-        return errors
-      },
-      selectErrors () {
-        const errors = []
-        if (!this.$v.select.$dirty) return errors
-        !this.$v.select.required && errors.push('Item is required')
-        return errors
-      },
-      nameErrors () {
-        const errors = []
-        if (!this.$v.name.$dirty) return errors
-        !this.$v.name.maxLength && errors.push('Name must be at most 10 characters long')
-        !this.$v.name.required && errors.push('Name is required.')
-        return errors
-      },
-      emailErrors () {
-        const errors = []
-        if (!this.$v.email.$dirty) return errors
-        !this.$v.email.email && errors.push('Must be valid e-mail')
-        !this.$v.email.required && errors.push('E-mail is required')
-        return errors
-      },
-    },
-
-    methods: {
-      submit () {
-        this.$v.$touch()
-      },
-      clear () {
-        this.$v.$reset()
-        this.name = ''
-        this.email = ''
-        this.select = null
-        this.checkbox = false
-      },
+    data () {
+      return {
+        e6: 1,
+      }
     },
   }
 </script>
+

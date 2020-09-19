@@ -8,6 +8,7 @@
         <v-toolbar-title>Sarovar</v-toolbar-title>
         <!-- Component Example -->
           <Header/>
+
       </v-app-bar>
     <!-- </v-row> -->
 
@@ -15,6 +16,7 @@
     <v-content light>
       <nuxt />
       <button/>
+      <HallBooking/>
     </v-content>
 
     <!-- Footer -->

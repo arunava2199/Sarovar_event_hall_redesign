@@ -2,7 +2,7 @@
   <div>
     <v-content>
 
-      <button/>
+
     </v-content>
   </div>
 </template>
