@@ -64,9 +64,9 @@
 
             <Dropdowns2/>
 
+            <!-- text box -->
             <form>
               <v-container
-
               <textarea> cols="30" rows="2">Type in your Queries.</textarea><br />
             </form>
 
