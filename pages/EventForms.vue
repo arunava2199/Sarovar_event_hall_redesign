@@ -1,95 +1,98 @@
 <template>
   <v-container>
     <HallBooking/>
-    <v-stepper v-model="e6" vertical>
-      <v-stepper-step :complete="e6 > 1" step="1">
-        Type of Event
-        <small></small>
-      </v-stepper-step>
 
-      <v-stepper-content step="1">
-        <v-card color="grey" class="mb-12" height="260px">
+    <v-col cols="3">
 
-          <!-- Contents of "Types of Event"  -->
+      <v-stepper v-model="e6" vertical class="outline">
+        <v-stepper-step :complete="e6 > 1" step="1">
+          Type of Event
+          <small></small>
+        </v-stepper-step>
 
-          <Radiobuttons/>
+        <v-stepper-content step="1">
+          <v-card color="grey" class="mb-12" height="360px">
 
-        </v-card>
-        <v-btn color="primary" @click="e6 = 2">Confirm & Continue</v-btn>
-        <!-- <v-btn text>Cancel</v-btn> -->
-      </v-stepper-content>
+            <!-- Contents of "Types of Event"  -->
 
-      <!-- this section adds elements below v-card -->
+            <Radiobuttons/>
 
-      <v-stepper-step :complete="e6 > 2" step="2">Specifications</v-stepper-step>
+          </v-card>
+          <v-btn color="primary" @click="e6 = 2">Confirm & Continue</v-btn>
+          <!-- <v-btn text>Cancel</v-btn> -->
+        </v-stepper-content>
 
-      <v-stepper-content step="2">
-        <v-card color="grey" class="mb-12" height="640px">
+        <!-- this section adds elements below v-card -->
 
-          <!-- Contents of "Specifications"  -->
+        <v-stepper-step :complete="e6 > 2" step="2">Specifications</v-stepper-step>
 
-          <Dropdowns/>
-          <Checkboxes/>
+        <v-stepper-content step="2">
+          <v-card color="grey" class="mb-12" height="640px">
 
+            <!-- Contents of "Specifications"  -->
 
-
-
-        </v-card>
-        <v-btn color="primary" @click="e6 = 3">Confirm & Continue</v-btn>
-        <!-- <v-btn text>Cancel</v-btn> -->
-      </v-stepper-content>
-
-      <v-stepper-step :complete="e6 > 3" step="3">Hall Suggestions</v-stepper-step>
-
-      <v-stepper-content step="3">
-        <v-card color="grey" class="mb-12" height="450px">
-
-          <!-- Contents of "Hall Suggestions"  -->
-
-          <!-- <HorizontalCard/> -->
-
-          <HallList/>
-          <HallList/>
+            <Dropdowns/>
+            <Checkboxes/>
 
 
 
-        </v-card>
-        <v-btn color="primary" @click="e6 = 4">Confirm & Continue</v-btn>
-        <!-- <v-btn text>Cancel</v-btn> -->
-      </v-stepper-content>
 
-      <v-stepper-step step="4">Optional Extras</v-stepper-step>
-      <v-stepper-content step="4">
-        <v-card color="grey" class="mb-12" height="260px">
+          </v-card>
+          <v-btn color="primary" @click="e6 = 3">Confirm & Continue</v-btn>
+          <!-- <v-btn text>Cancel</v-btn> -->
+        </v-stepper-content>
 
-            <Dropdowns2/>
+        <v-stepper-step :complete="e6 > 3" step="3">Hall Suggestions</v-stepper-step>
 
-            <!-- text box -->
-            <form>
-              <v-container
-              <textarea> cols="30" rows="2">Type in your Queries.</textarea><br />
-            </form>
+        <v-stepper-content step="3">
+          <v-card color="grey" class="mb-12" height="450px">
 
-        </v-card>
-        <v-btn color="primary" @click="e6 = 5">Confirm & Continue</v-btn>
-        <!-- <v-btn text>Cancel</v-btn> -->
-      </v-stepper-content>
+            <!-- Contents of "Hall Suggestions"  -->
 
-      <v-stepper-step step="5">Confirmation</v-stepper-step>
-      <v-stepper-content step="5">
-        <v-card color="grey" class="mb-12" height="500px">
+            <!-- <HorizontalCard/> -->
 
-          <!-- Contents of "Confirmation"  -->
-
-          <ConfirmForm/>
+            <HallList/>
+            <HallList/>
 
 
-        </v-card>
-        <v-btn color="primary" @click="e6 = 1">Confirm</v-btn>
-        <!-- <v-btn text>Cancel</v-btn> -->
-      </v-stepper-content>
 
-    </v-stepper>
+          </v-card>
+          <v-btn color="primary" @click="e6 = 4">Confirm & Continue</v-btn>
+          <!-- <v-btn text>Cancel</v-btn> -->
+        </v-stepper-content>
+
+        <v-stepper-step step="4">Optional Extras</v-stepper-step>
+        <v-stepper-content step="4">
+          <v-card color="grey" class="mb-12" height="260px">
+
+              <Dropdowns2/>
+
+              <!-- text box -->
+                <form>
+                  <v-container
+                  <textarea> cols="30" rows="2">Type in your Queries.</textarea><br />
+                </form>
+          </v-card>
+          <v-btn color="primary" @click="e6 = 5">Confirm & Continue</v-btn>
+          <!-- <v-btn text>Cancel</v-btn> -->
+        </v-stepper-content>
+
+        <v-stepper-step step="5">Confirmation</v-stepper-step>
+        <v-stepper-content step="5">
+          <v-card color="grey" class="mb-12" height="500px">
+
+            <!-- Contents of "Confirmation"  -->
+
+            <ConfirmForm/>
+
+
+          </v-card>
+          <v-btn color="primary" @click="e6 = 1">Confirm</v-btn>
+          <!-- <v-btn text>Cancel</v-btn> -->
+        </v-stepper-content>
+
+      </v-stepper>
+    </v-col>
   </v-container>
 </template>
 

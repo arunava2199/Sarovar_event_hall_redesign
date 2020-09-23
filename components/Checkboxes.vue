@@ -37,7 +37,7 @@
 
               <v-overflow-btn
                 class="my-2"
-                :items="dropdown_edit"
+                :items="table_numbers"
                 label="Editable Btn"
                 editable
                 item-value="text"
@@ -80,14 +80,14 @@
             </v-col> -->
 
             <v-col cols="12" sm="4">
-              <p>Number of Tables</p>
+              <p>Number of Chairs</p>
 
               <v-overflow-btn
                 class="my-2"
                 :items="dropdown_edit"
                 label="Editable Btn"
                 editable
-                item-value="text"
+                item-value="numbers"
               ></v-overflow-btn>
             </v-col>
           </v-row>
@@ -100,17 +100,22 @@
 <script>
   export default {
     data: () => ({
-      // dropdown_font: ['20-30', '30-40', '40-50'],
-      // dropdown_icon: [
-      //   { text: 'list', callback: () => console.log('list') },
-      //   { text: 'favorite', callback: () => console.log('favorite') },
-      //   { text: 'delete', callback: () => console.log('delete') },
-      // ],
       dropdown_edit: [
         { text: '20-30' },
         { text: '30-40' },
         { text: '40-50' },
+      ],
+    }),
+  }
+</script>
 
+<script>
+  export default {
+    data: () => ({
+      table_numbers: [
+        { text: '20-30' },
+        { text: '30-40' },
+        { text: '40-50' },
       ],
     }),
   }

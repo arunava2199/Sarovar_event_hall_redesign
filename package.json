@@ -12,6 +12,7 @@
   "dependencies": {
     "node-gyp": "^7.1.0",
     "nuxt": "^2.14.5",
+    "vue-responsive-components": "^0.2.3",
     "vuelidate": "^0.7.5"
   },
   "devDependencies": {

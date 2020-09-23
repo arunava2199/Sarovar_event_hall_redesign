@@ -2,7 +2,7 @@
   <div>
     <v-content>
 
-      <Breakpoint/>
+      <Responsive/>
 
     </v-content>
   </div>
