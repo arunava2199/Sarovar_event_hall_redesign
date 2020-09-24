@@ -1,8 +1,8 @@
 <template>
-  <v-container>
+  <v-container md="12" sm="8" xs="12">
     <HallBooking/>
 
-    <v-col cols="3">
+    <v-col cols="12">
 
       <v-stepper v-model="e6" vertical class="outline">
         <v-stepper-step :complete="e6 > 1" step="1">
@@ -11,7 +11,7 @@
         </v-stepper-step>
 
         <v-stepper-content step="1">
-          <v-card color="grey" class="mb-12" height="360px">
+          <v-card color="grey" class="mb-12" height="220px">
 
             <!-- Contents of "Types of Event"  -->
 
@@ -32,7 +32,9 @@
             <!-- Contents of "Specifications"  -->
 
             <Dropdowns/>
-            <Checkboxes/>
+            <Checkboxe1/>
+            <Checkboxe2/>
+
 
 
 
@@ -45,14 +47,19 @@
         <v-stepper-step :complete="e6 > 3" step="3">Hall Suggestions</v-stepper-step>
 
         <v-stepper-content step="3">
-          <v-card color="grey" class="mb-12" height="450px">
+          <v-card color="grey" class="mb-12" height="650px">
 
             <!-- Contents of "Hall Suggestions"  -->
 
             <!-- <HorizontalCard/> -->
 
-            <HallList/>
-            <HallList/>
+            <!-- add margin spacing -->
+
+            <HorizontalCard/>
+
+
+
+
 
 
 
@@ -108,4 +115,6 @@
     },
   }
 </script>
+
+
 

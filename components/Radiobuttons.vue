@@ -1,18 +1,19 @@
 <template>
   <v-container class="grey lighten-5"
+  max-height="220px"
   lg="10"
   md="8"
   sm="4"
   xs="2"
 
   >
-   <v-row
+   <v-row justify="center"
       no-gutters
       >
       <!-- Birthdays radio button -->
       <v-col
-      cols="6"
-      md="4"
+      cols="12"
+      md="3"
       sm="2"
       xs="1"
       class="ma-1 pa-lg-2 pa-md-4 pa-sm-2"
@@ -35,8 +36,8 @@
 
       <!-- Workshops radio button -->
       <v-col
-      cols="6"
-      md="4"
+      cols="12"
+      md="3"
       sm="2"
       xs="1"
       class="ma-1 pa-lg-2 pa-md-4 pa-sm-2"
@@ -59,8 +60,8 @@
 
       <!-- Parties radio button -->
       <v-col
-      cols="6"
-      md="4"
+      cols="12"
+      md="3"
       sm="2"
       xs="1"
       class="ma-1 pa-lg-2 pa-md-4 pa-sm-2"
@@ -82,13 +83,13 @@
       </v-col>
     </v-row>
 
-      <v-row
+    <v-row justify="center"
       no-gutters
       >
       <!-- Birthdays radio button -->
       <v-col
       cols="6"
-      md="4"
+      md="3"
       sm="2"
       xs="1"
       class="ma-1 pa-lg-2 pa-md-4 pa-sm-2"
@@ -112,7 +113,7 @@
       <!-- Workshops radio button -->
       <v-col
       cols="6"
-      md="4"
+      md="3"
       sm="2"
       xs="1"
       class="ma-1 pa-lg-2 pa-md-4 pa-sm-2"
@@ -136,7 +137,7 @@
       <!-- ceremonies radio button -->
       <v-col
       cols="6"
-      md="4"
+      md="3"
       sm="2"
       xs="1"
       class="ma-1 pa-lg-2 pa-md-4 pa-sm-2"

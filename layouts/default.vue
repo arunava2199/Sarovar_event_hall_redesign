@@ -4,8 +4,7 @@
 
     <!--Header -->
     <!-- <v-row justify="center" did not work -->
-      <v-app-bar color="white" dark fixed app>
-        <v-toolbar-title>Sarovar</v-toolbar-title>
+
         <!-- Component Example -->
           <Header/>
 
@@ -20,13 +19,13 @@
       <button/>
 
     </v-content>
-      
+
 
     <!-- Footer -->
-    <v-footer color="indigo" app>
-      <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
+
+
       <Footer/>
-    </v-footer>
+
 
   </v-app>
 </template>

@@ -2,7 +2,7 @@
   <div>
     <v-content>
 
-      <Responsive/>
+      <HorizontalCard/>
 
     </v-content>
   </div>
