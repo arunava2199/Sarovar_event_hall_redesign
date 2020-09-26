@@ -4,7 +4,7 @@
       <!-- code for text field -->
 
 
-        <v-text-field
+        <v-text-field class="pa-8"
           v-model="name"
           :error-messages="nameErrors"
           :counter="20"
@@ -13,7 +13,7 @@
           @input="$v.name.$touch()"
           @blur="$v.name.$touch()"
         ></v-text-field>
-        <v-text-field
+        <v-text-field class="pa-8"
           v-model="email"
           :error-messages="emailErrors"
           label="E-mail"
@@ -22,7 +22,7 @@
           @blur="$v.email.$touch()"
         ></v-text-field>
 
-        <v-text-field
+        <v-text-field class="pa-8"
           v-model="email"
           :error-messages="emailErrors"
           label="Phone Number"
@@ -44,9 +44,9 @@
             @blur="$v.select.$touch()"
           ></v-select> -->
 
-          <h3>Payment Options</h3>
+          <h3 class="pl-8">Payment Options</h3>
 
-          <v-checkbox
+          <v-checkbox class="pl-8"
             v-model="checkbox"
             :error-messages="checkboxErrors"
             label="On Site"
@@ -55,7 +55,7 @@
             @blur="$v.checkbox.$touch()"
           ></v-checkbox>
 
-          <v-checkbox
+          <v-checkbox class="pl-8"
             v-model="checkbox"
             :error-messages="checkboxErrors"
             label="Online"
@@ -64,7 +64,7 @@
             @blur="$v.checkbox.$touch()"
           ></v-checkbox>
 
-          <v-checkbox
+          <v-checkbox class="pl-8"
             v-model="checkbox"
             :error-messages="checkboxErrors"
             label="After Event"
@@ -73,8 +73,8 @@
             @blur="$v.checkbox.$touch()"
           ></v-checkbox>
 
-        <v-btn class="mr-4" @click="submit">submit</v-btn>
-        <v-btn @click="clear">clear</v-btn>
+        <v-btn class="ml-8" @click="submit">submit</v-btn>
+        <v-btn class="ml-4" @click="clear">clear</v-btn>
 
     </form>
 
@@ -154,3 +154,7 @@
     },
   }
 </script>
+
+
+
+

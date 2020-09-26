@@ -1,5 +1,5 @@
 <template>
-  <v-container class="grey lighten-5"
+  <v-container class="grey lighten-5 ma-1 pa-lg-2 pa-md-4 pa-sm-2"
   max-height="220px"
   lg="10"
   md="8"
@@ -86,9 +86,9 @@
     <v-row justify="center"
       no-gutters
       >
-      <!-- Birthdays radio button -->
+      <!-- weddings radio button -->
       <v-col
-      cols="6"
+      cols="12"
       md="3"
       sm="2"
       xs="1"
@@ -110,9 +110,9 @@
 
       </v-col>
 
-      <!-- Workshops radio button -->
+      <!-- launch events radio button -->
       <v-col
-      cols="6"
+      cols="12"
       md="3"
       sm="2"
       xs="1"
@@ -136,7 +136,7 @@
 
       <!-- ceremonies radio button -->
       <v-col
-      cols="6"
+      cols="12"
       md="3"
       sm="2"
       xs="1"

@@ -112,16 +112,16 @@
       return {
         items: [
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+            src: 'https://5.imimg.com/data5/SV/DX/GLADMIN-33559172/conference-hall-500x500.jpg',
           },
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+            src: 'https://www.sinclairshotels.com/assets/images/burdwan/Regal-Room-l-and-ll.jpg',
           },
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+            src: 'https://media-cdn.tripadvisor.com/media/photo-s/0b/51/39/62/conference-hall.jpg',
           },
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+            src: 'https://www.thelalit.com/wp-content/uploads/2017/02/glance-kolkata3-760-320.jpeg',
           },
         ],
       }

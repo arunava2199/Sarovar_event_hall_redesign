@@ -11,7 +11,7 @@
         </v-stepper-step>
 
         <v-stepper-content step="1">
-          <v-card color="grey" class="mb-12" height="220px">
+          <v-card color="grey" class="mb-12" height="450px">
 
             <!-- Contents of "Types of Event"  -->
 
@@ -77,8 +77,10 @@
               <!-- text box -->
                 <form>
                   <v-container
-                  <textarea> cols="30" rows="2">Type in your Queries.</textarea><br />
+                    <textarea>Type in your Queries.</textarea><br />
+
                 </form>
+
           </v-card>
           <v-btn color="primary" @click="e6 = 5">Confirm & Continue</v-btn>
           <!-- <v-btn text>Cancel</v-btn> -->
@@ -86,7 +88,7 @@
 
         <v-stepper-step step="5">Confirmation</v-stepper-step>
         <v-stepper-content step="5">
-          <v-card color="grey" class="mb-12" height="500px">
+          <v-card color="grey" class="mb-12" height="650px">
 
             <!-- Contents of "Confirmation"  -->
 

@@ -3,7 +3,7 @@
     <v-container class="ml-2">
       <v-row justify="space-between">
         <v-col cols="12"
-        md="5"
+          md="5"
         >
             <v-carousel height="200">
               <v-carousel-item
@@ -22,7 +22,9 @@
           <v-card color="blue"
             max-width="190px"
             max-height="300"
-            elevation="0"
+            elevation="1"
+            md="4"
+            cols="12"
           >
             <v-container>
               <h3>Sarovar Portico</h3><br/>
@@ -32,12 +34,12 @@
        </v-col>
 
         <!-- card for availability text -->
-        <
+
        <v-col>
           <v-card color="blue"
             max-width="190px"
             max-height="300"
-            elevation="0"
+            elevation="1"
             ml="10"
           >
             <v-container>
@@ -50,13 +52,13 @@
           </v-card>
        </v-col>
 
-       <!-- card for availability text -->
+       <!-- card for specification text -->
 
        <v-col>
           <v-card color="blue"
             max-width="190px"
             max-height="300"
-            elevation="0"
+            elevation="1"
             ml="10"
           >
             <v-container>
@@ -112,16 +114,16 @@
       return {
         items: [
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+            src: 'https://5.imimg.com/data5/SV/DX/GLADMIN-33559172/conference-hall-500x500.jpg',
           },
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+            src: 'https://www.sinclairshotels.com/assets/images/burdwan/Regal-Room-l-and-ll.jpg',
           },
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+            src: 'https://media-cdn.tripadvisor.com/media/photo-s/0b/51/39/62/conference-hall.jpg',
           },
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+            src: 'https://www.thelalit.com/wp-content/uploads/2017/02/glance-kolkata3-760-320.jpeg',
           },
         ],
       }
