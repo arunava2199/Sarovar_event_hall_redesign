@@ -11,7 +11,7 @@
         </v-stepper-step>
 
         <v-stepper-content step="1">
-          <v-card color="grey" class="mb-12" height="450px">
+          <v-card color="grey" class="mb-12" height="250px">
 
             <!-- Contents of "Types of Event"  -->
 
