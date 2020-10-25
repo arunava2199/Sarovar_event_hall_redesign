@@ -1,81 +1,84 @@
 <template>
-    <v-container fluid>
-      <v-checkbox v-model="checkbox1" :label="`Number of Tables: ${checkbox1.toString()}`"></v-checkbox>
+    <v-container id="dropdown-example">
+      <v-row>
 
 
-        <!-- dropdowns -->
+        <v-col cols="12" sm="4">
 
-        <template>
-          <v-container id="dropdown-example">
-            <v-row>
-              <!-- <v-col cols="12" sm="4">
-                <p>Estimated Number of People</p>
+        <!-- dropdowns for catering -->
 
-                <v-overflow-btn
-                  class="my-2"
-                  :items="dropdown_font"
-                  label="Overflow Btn"
-                  target="#dropdown-example"
-                ></v-overflow-btn>
-              </v-col>
+          <v-checkbox color="white"
+          <h3 class="black--text">Number of Tables</h3>
+          <v-overflow-btn
+            class="my-2"
+            editable
+            :items="dropdown_edit"
+            label="Options"
+            item-value="text"
+          ></v-overflow-btn>
+        </v-col>
+      </v-row>
 
-              <v-col cols="12" sm="4">
-                <p>Segmented</p>
+      <!-- dropdowns for stewards -->
 
-                <v-overflow-btn
-                  class="my-2"
-                  :items="dropdown_icon"
-                  label="Segmented Btn"
-                  segmented
-                  target="#dropdown-example"
-                ></v-overflow-btn>
-              </v-col> -->
+      <v-row>
+        <v-col cols="12" sm="4">
+          <h3 class="black--text">Number of Chairs</h3>
 
-              <v-col cols="12" sm="4">
-                <p>Number of Tables</p>
+          <v-overflow-btn
+            class="my-2"
+            editable
+            :items="steward_number"
+            label="Options"
+            item-value="text"
+          ></v-overflow-btn>
+        </v-col>
+      </v-row>
 
-                <v-overflow-btn
-                  class="my-2"
-                  :items="dropdown_edit"
-                  label="Editable Btn"
-                  editable
-                  item-value="text"
-                ></v-overflow-btn>
-              </v-col>
-            </v-row>
-          </v-container>
-        </template>
+      <!-- dropdowns for sound equipment -->
+
+      <v-row>
+        <v-col cols="12" sm="4">
+          <h3 class="black--text">Number of Screens</h3>
+
+          <v-overflow-btn
+            class="my-2"
+            editable
+            :items="sound"
+            label="Options"
+            item-value="text"
+          ></v-overflow-btn>
+        </v-col>
+      </v-row>
+
     </v-container>
 </template>
 
 <script>
+
+  // To call data you need to put everything between these brackets []
+
   export default {
     data: () => ({
-      // dropdown_font: ['20-30', '30-40', '40-50'],
-      // dropdown_icon: [
-      //   { text: 'list', callback: () => console.log('list') },
-      //   { text: 'favorite', callback: () => console.log('favorite') },
-      //   { text: 'delete', callback: () => console.log('delete') },
-      // ],
+
       dropdown_edit: [
         { text: '20-30' },
         { text: '30-40' },
         { text: '40-50' },
-
+      ],
+      steward_number: [
+        { text: '20-30' },
+        { text: '30-40' },
+        { text: '40-50' },
+      ],
+      sound: [
+        { text: '2' },
+        { text: '4' },
+        { text: '8' },
       ],
     }),
   }
-</script>
 
-<script>
-  export default {
-    data () {
-      return {
-        checkbox1: false,
-        checkbox2: true,
-      }
-    },
-  }
-</script>
 
+</script>
 

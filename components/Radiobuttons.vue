@@ -1,5 +1,5 @@
 <template>
-  <v-container class="grey lighten-5 ma-1 pa-lg-2 pa-md-4 pa-sm-2"
+  <v-container class="white ma-1 pa-lg-2 pa-md-4 pa-sm-2"
   max-height="220px"
   lg="10"
   md="8"
@@ -167,8 +167,8 @@
   export default {
     data () {
       return {
-        column: null,
-        row: null,
+        column: true,
+        row: false,
       }
     },
   }

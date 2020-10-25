@@ -1,17 +1,17 @@
 <template>
-  <v-container md="12" sm="8" xs="12">
+  <v-container class="white" md="12" sm="8" xs="12">
     <HallBooking/>
 
     <v-col cols="12">
 
-      <v-stepper v-model="e6" vertical class="outline">
+      <v-stepper v-model="e6" vertical>
         <v-stepper-step :complete="e6 > 1" step="1">
-          Type of Event
+          <h2 class="blue--text">Type of Event</h2>
           <small></small>
         </v-stepper-step>
 
         <v-stepper-content step="1">
-          <v-card color="grey" class="mb-12" height="250px">
+          <v-card color="grey" class="mb-12" height="450px">
 
             <!-- Contents of "Types of Event"  -->
 
@@ -24,16 +24,18 @@
 
         <!-- this section adds elements below v-card -->
 
-        <v-stepper-step :complete="e6 > 2" step="2">Specifications</v-stepper-step>
+        <v-stepper-step :complete="e6 > 2" step="2">
+          <h2 class="blue--text">Specifications</h2>
+          </v-stepper-step>
 
         <v-stepper-content step="2">
-          <v-card color="grey" class="mb-12" height="640px">
+          <v-card color="grey" class="mb-12" height="600px">
 
             <!-- Contents of "Specifications"  -->
 
             <Dropdowns/>
             <Checkboxe1/>
-            <Checkboxe2/>
+
 
 
 
@@ -44,7 +46,9 @@
           <!-- <v-btn text>Cancel</v-btn> -->
         </v-stepper-content>
 
-        <v-stepper-step :complete="e6 > 3" step="3">Hall Suggestions</v-stepper-step>
+        <v-stepper-step :complete="e6 > 3" step="3">
+          <h2 class="blue--text">Hall Suggestions</h2>
+          </v-stepper-step>
 
         <v-stepper-content step="3">
           <v-card color="grey" class="mb-12" height="650px">
@@ -55,6 +59,8 @@
 
             <!-- add margin spacing -->
 
+            <HorizontalCard/>
+            </br>
             <HorizontalCard/>
 
 
@@ -68,25 +74,25 @@
           <!-- <v-btn text>Cancel</v-btn> -->
         </v-stepper-content>
 
-        <v-stepper-step step="4">Optional Extras</v-stepper-step>
+        <v-stepper-step step="4">
+           <h2 class="blue--text">Optional Extras</h2>
+          </v-stepper-step>
         <v-stepper-content step="4">
-          <v-card color="grey" class="mb-12" height="260px">
+          <v-card color="grey" class="mb-12" height="850px">
 
               <Dropdowns2/>
+              <Textbox/>
 
-              <!-- text box -->
-                <form>
-                  <v-container
-                    <textarea>Type in your Queries.</textarea><br />
 
-                </form>
 
           </v-card>
           <v-btn color="primary" @click="e6 = 5">Confirm & Continue</v-btn>
           <!-- <v-btn text>Cancel</v-btn> -->
         </v-stepper-content>
 
-        <v-stepper-step step="5">Confirmation</v-stepper-step>
+        <v-stepper-step step="5">
+          <h2 class="blue--text">Confirmation</h2>
+          </v-stepper-step>
         <v-stepper-content step="5">
           <v-card color="grey" class="mb-12" height="650px">
 
