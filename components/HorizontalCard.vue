@@ -1,6 +1,6 @@
 <template>
-  <v-card class="col-12 ml-0" color="blue" max-height="300px" md="4">
-    <v-container class="ml-2">
+  <v-card class="col-12 ml-0" sm="3" color="blue" max-height="300px" md="4">
+    <v-container fluid class="ml-2">
       <v-row justify="space-between">
         <v-col cols="12"
           md="5"

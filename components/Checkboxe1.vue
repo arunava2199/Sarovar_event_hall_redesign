@@ -1,5 +1,5 @@
 <template>
-    <v-container id="dropdown-example">
+    <v-container class="white" id="dropdown-example">
       <v-row>
 
 
@@ -8,9 +8,11 @@
         <!-- dropdowns for catering -->
 
           <v-checkbox color="white"
-          <h3 class="black--text">Number of Tables</h3>
+            <font color="#BDBDBD">
+              <h3>Number of Tables</h3>
+            </font>
           <v-overflow-btn
-            class="my-2"
+            class="my-2 blue"
             editable
             :items="dropdown_edit"
             label="Options"
@@ -23,10 +25,12 @@
 
       <v-row>
         <v-col cols="12" sm="4">
-          <h3 class="black--text">Number of Chairs</h3>
+            <font color="#BDBDBD">
+              <h3>Number of Chairs</h3>
+            </font>
 
           <v-overflow-btn
-            class="my-2"
+            class="my-2 blue"
             editable
             :items="steward_number"
             label="Options"
@@ -39,10 +43,12 @@
 
       <v-row>
         <v-col cols="12" sm="4">
-          <h3 class="black--text">Number of Screens</h3>
+            <font color="#BDBDBD">
+              <h3>Number of Screens</h3>
+            </font>
 
           <v-overflow-btn
-            class="my-2"
+            class="my-2 blue"
             editable
             :items="sound"
             label="Options"

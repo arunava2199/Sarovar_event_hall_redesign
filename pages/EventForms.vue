@@ -1,17 +1,18 @@
 <template>
   <v-container class="white" md="12" sm="8" xs="12">
-    <HallBooking/>
+
+    <h1>Hall Booking</h1>
 
     <v-col cols="12">
 
-      <v-stepper v-model="e6" vertical>
+      <v-stepper class="white" v-model="e6" vertical>
         <v-stepper-step :complete="e6 > 1" step="1">
           <h2 class="blue--text">Type of Event</h2>
           <small></small>
         </v-stepper-step>
 
         <v-stepper-content step="1">
-          <v-card color="grey" class="mb-12" height="450px">
+          <v-card color="white" class="mb-12" height="450px">
 
             <!-- Contents of "Types of Event"  -->
 
@@ -29,17 +30,12 @@
           </v-stepper-step>
 
         <v-stepper-content step="2">
-          <v-card color="grey" class="mb-12" height="600px">
+          <v-card outlined class="mb-12" height="675px">
 
             <!-- Contents of "Specifications"  -->
 
             <Dropdowns/>
             <Checkboxe1/>
-
-
-
-
-
 
           </v-card>
           <v-btn color="primary" @click="e6 = 3">Confirm & Continue</v-btn>
@@ -50,8 +46,10 @@
           <h2 class="blue--text">Hall Suggestions</h2>
           </v-stepper-step>
 
+          <!-- the feature "outlined" worked for step 4 of the stepper form -->
+
         <v-stepper-content step="3">
-          <v-card color="grey" class="mb-12" height="650px">
+          <v-card outlined class="mb-12" height="650px">
 
             <!-- Contents of "Hall Suggestions"  -->
 
@@ -64,11 +62,6 @@
             <HorizontalCard/>
 
 
-
-
-
-
-
           </v-card>
           <v-btn color="primary" @click="e6 = 4">Confirm & Continue</v-btn>
           <!-- <v-btn text>Cancel</v-btn> -->
@@ -77,13 +70,12 @@
         <v-stepper-step step="4">
            <h2 class="blue--text">Optional Extras</h2>
           </v-stepper-step>
+          <!-- In the same manner "Outlined" was used again in exactly the same way, but it did not work -->
         <v-stepper-content step="4">
-          <v-card color="grey" class="mb-12" height="850px">
+          <v-card outlined color="#F5F5F5" class="mb-12" height="850px">
 
               <Dropdowns2/>
               <Textbox/>
-
-
 
           </v-card>
           <v-btn color="primary" @click="e6 = 5">Confirm & Continue</v-btn>
@@ -94,7 +86,8 @@
           <h2 class="blue--text">Confirmation</h2>
           </v-stepper-step>
         <v-stepper-content step="5">
-          <v-card color="grey" class="mb-12" height="650px">
+          <!-- again "outlined" did not work here -->
+          <v-card outlined color="#F5F5F5" class="mb-12" height="650px">
 
             <!-- Contents of "Confirmation"  -->
 

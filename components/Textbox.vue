@@ -3,20 +3,30 @@
     <v-container>
       <v-row>
 
+        <!-- This component is the "Queries Section"
+        it has header text in blue an grey color
+        those headers have editable text boxes, that work under them -->
+
 
         <v-col
           cols="12"
           sm="6"
         >
         <!-- Bold Heads -->
-         <h2 class="black--text">Queries? Contact Us...</h2>
+          <font color="#BDBDBD">
+            <h2>Queries? Contact Us...</h2>
+          </font>
 
           <!-- Normal sized heads -->
-         <p class="black--text">E-mail / Phone Number</p>
-          <v-text-field
+          <font color="#1565C0">
+            <h4>E-mail / Phone Number</h4>
+          </font>
+
+          <v-text-field class="blue"
             label="example@gmail.com / 98xxxxxxxx"
             single-line
             outlined
+
           ></v-text-field>
         </v-col>
 
@@ -28,8 +38,10 @@
           cols="12"
           sm="6"
         >
-        <p class="black--text">Queries</p>
-          <v-text-field
+          <font color="#1565C0">
+            <h4>Queries</h4>
+          </font>
+          <v-text-field class="blue"
             label="Type here..."
             single-line
             outlined

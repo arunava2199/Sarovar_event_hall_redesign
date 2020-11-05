@@ -6,10 +6,13 @@
         <v-col cols="12" sm="4">
 
         <!-- dropdowns for catering -->
+        <!-- font color tag has been used to change the color of text -->
 
-          <h2 class="black--text">1. Catering</h2>
+          <font color="#BDBDBD">
+            <h2>1. Catering</h2>
+          </font>
           <v-overflow-btn
-            class="my-2"
+            class="my-2 blue"
             :items="dropdown_edit"
             label="Options"
             item-value="text"
@@ -21,10 +24,13 @@
 
       <v-row>
         <v-col cols="12" sm="4">
-          <h2 class="black--text">2. Stewards</h2>
+
+          <font color="#BDBDBD">
+            <h2>2. Stewards</h2>
+          </font>
 
           <v-overflow-btn
-            class="my-2"
+            class="my-2 blue"
             :items="steward_number"
             label="Options"
             item-value="text"
@@ -36,10 +42,13 @@
 
       <v-row>
         <v-col cols="12" sm="4">
-          <h2 class="black--text">3. Sound Equipment</h2>
+
+          <font color="#BDBDBD">
+            <h2>3. Sound Equipment</h2>
+          </font>
 
           <v-overflow-btn
-            class="my-2"
+            class="my-2 blue"
             multiple
             :items="sound"
             label="Options"
